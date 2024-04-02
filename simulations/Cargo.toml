@@ -1,0 +1,24 @@
+[package]
+name = "ecoevo_landscapes"
+version = "1.0.0"
+authors = ["André Amado <andre.amado@pm.me>"]
+edition = "2021"
+
+[dependencies]
+rand = "0.8.4"
+rand_distr = "0.4.2"
+clap = "2.33.3"
+serde = { version = "1.0.130", features = ["derive"] }
+serde_cbor = "0.11.2"
+
+[[bin]]
+name = "create_landscape"
+path = "src/create_landscape.rs"
+
+[[bin]]
+name = "convergence"
+path = "src/convergence.rs"
+
+[[bin]]
+name = "ecoevo_landscapes"
+path = "src/ecoevo_landscapes.rs"
