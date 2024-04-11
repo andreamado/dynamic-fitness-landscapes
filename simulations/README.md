@@ -5,3 +5,5 @@ This folder contains:
   - convergence, that runs simulations and records detailed information and graphs of the fitness landscapes
   - ecoevo_landscapes, that runs simulations and records statistical information on population and fitness landscapes
 - run_simulations.py - An example script to run a batch of simulations in parallel
+
+To compile the Rust programs, install Rust following the instructions in the [Rust webpage](https://www.rust-lang.org/tools/install). Then, open a terminal in the `simulations` folder and run the command `cargo build --release`. This will create the three executables described above in the folder `target/release/`. For instructions on how to run them use the `--help` option, e.g., `target/release/ecoevo_landscapes --help`.
