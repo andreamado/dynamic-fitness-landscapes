@@ -63,7 +63,7 @@ else:
             for a in a_list:
                 for mutation_rate in mutation_rate_list:
                     process = ['../simulations/target/release/ecoevo_landscapes',
-                                '--landscapes',    str(landscapes),
+                                '--landscapes',    '0', str(landscapes),
                                 '--replicates',    str(replicates),
                                 '--mutation_rate', str(mutation_rate)]
 
